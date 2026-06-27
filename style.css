@@ -1,8 +1,51 @@
-load{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+/* Loading Screen */
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(135deg,#f5f5dc,#d2b48c);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.coconut-container{
+    text-align:center;
+}
+
+.coconut{
+    width:120px;
+    animation:bounce 1.5s infinite ease-in-out,
+               spin 3s linear infinite;
+}
+
+.coconut-container p{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:bold;
+    color:#5c4033;
+    letter-spacing:1px;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+@keyframes spin{
+    from{
+        rotate:0deg;
+    }
+    to{
+        rotate:360deg;
+    }
 }
 
 html{
