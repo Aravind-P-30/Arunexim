@@ -491,12 +491,31 @@ text-align:center;
 padding:30px;
 }
 
-.social i{
-font-size:24px;
-margin:15px 10px;
-cursor:pointer;
+.social{
+margin-top:20px;
 }
 
+.social a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:50px;
+height:50px;
+margin:0 8px;
+border-radius:50%;
+background:#00b45a;
+color:#fff;
+font-size:22px;
+transition:.4s;
+text-decoration:none;
+}
+
+.social a:hover{
+transform:translateY(-8px) rotate(360deg);
+background:#fff;
+color:#00b45a;
+box-shadow:0 10px 25px rgba(0,180,90,.5);
+}
 @media(max-width:768px){
 
 header{
