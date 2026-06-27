@@ -1,23 +1,24 @@
-document.getElementById("contactForm")
-.addEventListener("submit", function(e){
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e){
 
 e.preventDefault();
 
-alert(
-"Thank you for contacting Arun Exim. We will get back to you soon."
-);
+alert("Thank you for contacting Arun Exim. We will reply soon.");
 
-this.reset();
+form.reset();
 
 });
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", () => {
 
-const header = document.querySelector("header");
+const header = document.getElementById("header");
 
-header.style.background =
-window.scrollY > 100
-? "rgba(0,0,0,0.95)"
-: "rgba(0,0,0,0.8)";
+if(window.scrollY > 100){
+header.style.background="#000";
+}
+else{
+header.style.background="rgba(0,0,0,.8)";
+}
 
 });
