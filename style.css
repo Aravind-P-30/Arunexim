@@ -183,7 +183,7 @@ gap:30px;
 }
 
 .product{
-height:350px;
+height:250px;
 border-radius:25px;
 overflow:hidden;
 position:relative;
@@ -218,6 +218,15 @@ background-image:url("https://i.pinimg.com/webp85/1200x/2b/35/3f/2b353f1778e3b9d
 .scrub{
 background-image:url("https://i.pinimg.com/1200x/03/d1/32/03d1321f31b264f5dbf7cb3986e75172.jpg");
 }
+
+.onion{
+background-image:url("https://i.pinimg.com/736x/42/81/78/428178d92459ba8d0f571bb2a59870b1.jpg");
+}
+
+.chilli{
+background-image:url("https://i.pinimg.com/1200x/c0/6b/1e/c06b1e6354aaa6f625e55b2e660d0723.jpg");
+}
+
 
 
 
