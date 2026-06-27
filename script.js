@@ -1,21 +1,33 @@
-const form = document.getElementById("contactForm");
-window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
+window.addEventListener("load", () => {
 
-    loader.style.opacity = "0";
-    loader.style.transition = "0.8s";
+setTimeout(() => {
 
-    setTimeout(() => {
-        loader.style.display = "none";
-    }, 800);
+const loader = document.getElementById("loader");
+
+loader.style.opacity = "0";
+loader.style.transition = "0.8s";
+
+setTimeout(() => {
+
+loader.style.display = "none";
+
+},800);
+
+},2500);
+
 });
-form.addEventListener("submit", function(e){
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(e){
 
 e.preventDefault();
 
-alert("Thank you for contacting Arun Exim. We will reply soon.");
+alert(
+"Thank you for contacting Arun Exim. Our team will contact you shortly."
+);
 
-form.reset();
+this.reset();
 
 });
 
@@ -23,11 +35,14 @@ window.addEventListener("scroll", () => {
 
 const header = document.getElementById("header");
 
-if(window.scrollY > 100){
+if(window.scrollY > 50){
+
 header.style.background="#000";
-}
-else{
-header.style.background="rgba(0,0,0,.8)";
+
+}else{
+
+header.style.background="rgba(0,0,0,.7)";
+
 }
 
 });
