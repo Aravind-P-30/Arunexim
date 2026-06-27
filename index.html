@@ -1,26 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arun Exim | Agri Export</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>A simple webpage using HTML and CSS</p>
-    </header>
 
-    <main>
-        <h2>About</h2>
-        <p>This is a sample webpage that you can upload to GitHub Pages.</p>
+<nav id="navbar">
+    <div class="logo">🌾 Arun Exim</div>
 
-        <button>Learn More</button>
-    </main>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <footer>
-        <p>&copy; 2026 My Website</p>
-    </footer>
+<section id="home" class="hero">
+    <div class="overlay">
+        <h1>Premium Agricultural Exports</h1>
+
+        <p>
+            Connecting Farmers to Global Markets
+        </p>
+
+        <a href="#contact" class="btn">
+            Get Quote
+        </a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Arun Exim</h2>
+
+    <p>
+        Arun Exim specializes in the export of premium agricultural products,
+        delivering quality, trust, and sustainability to international markets.
+    </p>
+</section>
+
+<section id="products" class="section products">
+
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=800&q=80">
+            <h3>Basmati Rice</h3>
+            <p>Premium quality export rice.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=800&q=80">
+            <h3>Indian Spices</h3>
+            <p>Fresh spices directly sourced from farms.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&w=800&q=80">
+            <h3>Pulses</h3>
+            <p>Premium quality pulses for export.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h3>20+</h3>
+        <p>Countries</p>
+    </div>
+
+    <div class="stat">
+        <h3>500+</h3>
+        <p>Clients</p>
+    </div>
+
+    <div class="stat">
+        <h3>1000+</h3>
+        <p>Shipments</p>
+    </div>
+
+</section>
+
+<section id="contact" class="section">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+        <p><b>Company:</b> Arun Exim</p>
+        <p><b>Phone:</b> +91 XXXXXXXXXX</p>
+        <p><b>Email:</b> info@arunexim.com</p>
+        <p><b>Address:</b> Your Address Here</p>
+
+        <button onclick="showMessage()">
+            Send Inquiry
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Arun Exim | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
