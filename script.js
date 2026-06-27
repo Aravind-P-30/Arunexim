@@ -1,5 +1,14 @@
 const form = document.getElementById("contactForm");
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
 
+    loader.style.opacity = "0";
+    loader.style.transition = "0.8s";
+
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 800);
+});
 form.addEventListener("submit", function(e){
 
 e.preventDefault();
